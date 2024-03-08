@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="idnumber">ID Number</label><br>
+                        <input type="text" name="idnumber" id="idnumber">
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label><br>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                    <div>
+                        <label for="firstname">First Name</label><br>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                      <label for="password">Password</label><br>
+                      <input type="text" name="password" id="password">
+                  </div>
+                  <div>
+                      <label for="status">Status</label><br>
+                      <select name="status" id="status">
+                        <option value="Admin">Admin</option>
+                        <option value="Guest">Guest</option>
+                      </select>
+                </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>ID Number</th>
+                                <th>Last Name</th>
+                                <th>First Name</th>
+                                <th>Email</th>
+                                <th>Password</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
